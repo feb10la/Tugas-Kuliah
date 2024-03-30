@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tugas AR - Obyek 3D dengan A-Frame</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <!-- Obyek 1: Bola dengan warna merah -->
+        <a-sphere position="-2 1 -5" radius="1" color="red"></a-sphere>
+
+        <!-- Obyek 2: Kotak dengan warna biru dan rotasi -->
+        <a-box position="-1 1 -5" width="1" height="1" depth="1" color="blue" rotation="45 0 0"></a-box>
+
+        <!-- Obyek 3: Silinder dengan warna kuning dan skala -->
+        <a-cylinder position="0 1 -5" radius="0.5" height="1.5" color="yellow" scale="1 2 1"></a-cylinder>
+
+        <!-- Obyek 4: Kerucut dengan warna hijau dan material -->
+        <a-cone position="1 1 -5" radius-bottom="0.5" radius-top="0" height="1.5" color="green"
+            material="metal"></a-cone>
+
+        <!-- Obyek 5: Torus dengan warna ungu dan animasi rotasi -->
+        <a-torus position="2 1 -5" radius="0.75" radius-tubular="0.1" color="purple"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"></a-torus>
+
+        <!-- Obyek 6: Dodecahedron dengan warna pink dan posisi -->
+        <a-dodecahedron position="-2 0 -5" radius="1" color="pink"></a-dodecahedron>
+
+        <!-- Obyek 7: Tetrahedron dengan warna orange dan skala -->
+        <a-tetrahedron position="-1 0 -5" radius="1" color="orange" scale="0.5 0.5 0.5"></a-tetrahedron>
+
+        <a-sky color="#ECECEC"></a-sky>
+        <a-camera position="0 1.6 0"></a-camera>
+    </a-scene>
+</body>
+
+</html>
